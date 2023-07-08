@@ -1,46 +1,34 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
-    <AssemblyName>Itenso.TimePeriod</AssemblyName>
-    <RootNamespace>Itenso.TimePeriod</RootNamespace>
-    <Version>1.0.0</Version>
-    <Authors>Jani Giannoudis;hanamichi2385</Authors>
-    <Company />
-    <PackageProjectUrl>http://www.codeproject.com/Articles/168662/Time-Period-Library-for-NET</PackageProjectUrl>
-    <Copyright>(c) 2011-2017 by Jani Giannoudis, Switzerland | 2023 by hanamichi2385, Italy</Copyright>
-    <Description>TimePeriodLibrary.NET Porting - Extensive time period calculations and individual calendar periods.</Description>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <PackageTags>C# ASP.NET Windows .NET Mobile Date Time Calendar</PackageTags>
-    <PackageReleaseNotes>- Porting to NETStandard 2.0</PackageReleaseNotes>
-    <RepositoryUrl>https://github.com/hanamichi2385/TimePeriodLibrary</RepositoryUrl>
-    <RepositoryType>GitHub</RepositoryType>
-    <PackageId>TimePeriodLibrary.NETCore</PackageId>
-    <SignAssembly>True</SignAssembly>
-    <AssemblyOriginatorKeyFile>TimePeriodLibrary.snk</AssemblyOriginatorKeyFile>
-    <AssemblyVersion>1.0.0.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
+		<AssemblyName>Itenso.TimePeriod</AssemblyName>
+		<RootNamespace>Itenso.TimePeriod</RootNamespace>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageId>TimePeriodLibrary.NETCore</PackageId>
+		<SignAssembly>True</SignAssembly>
+		<AssemblyOriginatorKeyFile>TimePeriodLibrary.snk</AssemblyOriginatorKeyFile>
+	</PropertyGroup>
+	<Import Project="..\SolutionItems\GlobalAssemblyInfo.proj" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+		<OutputPath></OutputPath>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath></OutputPath>
-  </PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<OutputPath></OutputPath>
+		<GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+		<DebugType>none</DebugType>
+		<DebugSymbols>False</DebugSymbols>
+	</PropertyGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <OutputPath></OutputPath>
-    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
-    <DebugType>none</DebugType>
-    <DebugSymbols>False</DebugSymbols>
-  </PropertyGroup>
+	<ItemGroup>
+		<Compile Remove="Properties\**" />
+		<EmbeddedResource Remove="Properties\**" />
+		<None Remove="Properties\**" />
+	</ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="Properties\**" />
-    <EmbeddedResource Remove="Properties\**" />
-    <None Remove="Properties\**" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Remove="TimeLineMomentCollection.Desktop.cs" />
-  </ItemGroup>
+	<ItemGroup>
+		<Compile Remove="TimeLineMomentCollection.Desktop.cs" />
+	</ItemGroup>
 
 </Project>

@@ -1,9 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TimePeriod", "TimePeriod\TimePeriod.csproj", "{44E40077-BCA8-482A-824A-93589AF47E67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{5162A8E1-19BD-4644-B4D2-90E6A1DC09A3}"
+	ProjectSection(SolutionItems) = preProject
+		SolutionItems\GlobalAssemblyInfo.proj = SolutionItems\GlobalAssemblyInfo.proj
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
