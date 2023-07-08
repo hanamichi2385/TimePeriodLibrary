@@ -24,6 +24,7 @@
 	<ItemGroup>
 		<Compile Remove="Properties\**" />
 		<EmbeddedResource Remove="Properties\**" />
+		<None Include="..\docu\README.md" Pack="true" PackagePath="\"/>
 		<None Remove="Properties\**" />
 	</ItemGroup>
 
