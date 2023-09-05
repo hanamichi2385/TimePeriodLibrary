@@ -2,11 +2,11 @@
 	<PropertyGroup>
 		<Authors>Jani Giannoudis;hanamichi2385</Authors>
 		<Authors>Jani Giannoudis;hanamichi2385</Authors>
-		<Copyright>(c) 2011-2017 by Jani Giannoudis, Switzerland | 2023 by hanamichi2385, Italy</Copyright>
-		<ProductVersion>1.0.0</ProductVersion>
-		<AssemblyVersion>1.0.0</AssemblyVersion>
-		<FileVersion>1.0.0</FileVersion>
-		<Version>1.0.0</Version>
+		<Copyright>(c) 2011-2023 by Jani Giannoudis, Switzerland | 2023 by hanamichi2385, Italy</Copyright>
+		<ProductVersion>1.0.1</ProductVersion>
+		<AssemblyVersion>1.0.1</AssemblyVersion>
+		<FileVersion>1.0.1</FileVersion>
+		<Version>1.0.1</Version>
 		<RepositoryUrl>https://github.com/hanamichi2385/trinity-text</RepositoryUrl>
 		<RepositoryType>git</RepositoryType>
 		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
